@@ -1,0 +1,12 @@
+venv/
+__pycache__/
+*.pyc
+.env
+data/cookies.json
+.DS_Store
+error.log
+run.log
+run_utf8.log
+*.png
+*.html
+c:\tmp\

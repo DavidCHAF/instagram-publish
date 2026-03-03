@@ -1,0 +1,86 @@
+Traceback (most recent call last):
+  File "C:\Users\david\.gemini\antigravity\scratch\instagram_publisher\main.py", line 74, in run_task
+    uploader.publish_post(media_path, caption)
+  File "C:\Users\david\.gemini\antigravity\scratch\instagram_publisher\src\uploader.py", line 147, in publish_post
+    share_btn.first.click()
+  File "C:\Users\david\.gemini\antigravity\scratch\instagram_publisher\venv\lib\site-packages\playwright\sync_api\_generated.py", line 15631, in click
+    self._sync(
+  File "C:\Users\david\.gemini\antigravity\scratch\instagram_publisher\venv\lib\site-packages\playwright\_impl\_sync_base.py", line 115, in _sync
+    return task.result()
+  File "C:\Users\david\.gemini\antigravity\scratch\instagram_publisher\venv\lib\site-packages\playwright\_impl\_locator.py", line 162, in click
+    return await self._frame._click(self._selector, strict=True, **params)
+  File "C:\Users\david\.gemini\antigravity\scratch\instagram_publisher\venv\lib\site-packages\playwright\_impl\_frame.py", line 566, in _click
+    await self._channel.send("click", self._timeout, locals_to_params(locals()))
+  File "C:\Users\david\.gemini\antigravity\scratch\instagram_publisher\venv\lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+  File "C:\Users\david\.gemini\antigravity\scratch\instagram_publisher\venv\lib\site-packages\playwright\_impl\_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TimeoutError: Locator.click: Timeout 30000ms exceeded.
+Call log:
+  - waiting for get_by_text("Share", exact=True).or_(locator("div[role=\"button\"]:has-text(\"Share\")")).or_(get_by_text("Partager", exact=True)).or_(locator("div[role=\"button\"]:has-text(\"Partager\")")).first
+    - locator resolved to <div tabindex="0" role="button" class="x1i10hfl x1qjc9v5 xjbqb8w xjqpnuy xc5r6h4 xqeqjp1 x1phubyo x13fuv20 x18b5jzi x1q0q8m5 x1t7ytsu x972fbf x10w94by x1qhh985 x14e42zd x9f619 x1ypdohk xdl72j9 x2lah0s x3ct3a4 xdj266r x14z9mp xat24cr x1lziwak x2lwn1j xeuugli x1n2onr6 x16tdsg8 x1hl2dhg xggy1nq x1ja2u2z x1t137rt x1fmog5m xu25z0z x140muxe xo1y3bh x3nfvp2 x1q0g3np x87ps6o x1lku1pv x1a2a7pz x1epzrsm xpzwpp9 xus2keu x1y1aw1k xf159sx xwib8y2 xmzvs34">…</div>
+  - attempting click action
+    - waiting for element to be visible, enabled and stable
+    - element is visible, enabled and stable
+    - scrolling into view if needed
+    - done scrolling
+    - <div tabindex="0" role="button" class="x1qjc9v5 x9f619 x78zum5 xdt5ytf x2lah0s x5yr21d x10l6tqk x11njtxf xh8yej3"></div> from <div class="x1n2onr6 xzkaem6">…</div> subtree intercepts pointer events
+  - retrying click action
+    - waiting for element to be visible, enabled and stable
+    - element is visible, enabled and stable
+    - scrolling into view if needed
+    - done scrolling
+    - <div class="x1qjc9v5 x9f619 x78zum5 xdt5ytf x1iyjqo2 xl56j7k">…</div> from <div class="x1n2onr6 xzkaem6">…</div> subtree intercepts pointer events
+  - retrying click action
+    - waiting 20ms
+    - waiting for element to be visible, enabled and stable
+    - element is visible, enabled and stable
+    - scrolling into view if needed
+    - done scrolling
+    - <div tabindex="0" role="button" class="x1qjc9v5 x9f619 x78zum5 xdt5ytf x2lah0s x5yr21d x10l6tqk x11njtxf xh8yej3"></div> from <div class="x1n2onr6 xzkaem6">…</div> subtree intercepts pointer events
+  2 × retrying click action
+      - waiting 100ms
+      - waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <div class="x1qjc9v5 x9f619 x78zum5 xdt5ytf x1iyjqo2 xl56j7k">…</div> from <div class="x1n2onr6 xzkaem6">…</div> subtree intercepts pointer events
+  13 × retrying click action
+       - waiting 500ms
+       - waiting for element to be visible, enabled and stable
+       - element is visible, enabled and stable
+       - scrolling into view if needed
+       - done scrolling
+       - <div class="x1qjc9v5 x9f619 x78zum5 xdt5ytf x1iyjqo2 xl56j7k">…</div> from <div class="x1n2onr6 xzkaem6">…</div> subtree intercepts pointer events
+     - retrying click action
+       - waiting 500ms
+       - waiting for element to be visible, enabled and stable
+       - element is visible, enabled and stable
+       - scrolling into view if needed
+       - done scrolling
+       - <div tabindex="0" role="button" class="x1qjc9v5 x9f619 x78zum5 xdt5ytf x2lah0s x5yr21d x10l6tqk x11njtxf xh8yej3"></div> from <div class="x1n2onr6 xzkaem6">…</div> subtree intercepts pointer events
+     - retrying click action
+       - waiting 500ms
+       - waiting for element to be visible, enabled and stable
+       - element is visible, enabled and stable
+       - scrolling into view if needed
+       - done scrolling
+       - <div class="x1qjc9v5 x9f619 x78zum5 xdt5ytf x1iyjqo2 xl56j7k">…</div> from <div class="x1n2onr6 xzkaem6">…</div> subtree intercepts pointer events
+     - retrying click action
+       - waiting 500ms
+       - waiting for element to be visible, enabled and stable
+       - element is visible, enabled and stable
+       - scrolling into view if needed
+       - done scrolling
+       - <div class="x1qjc9v5 x9f619 x78zum5 xdt5ytf x1iyjqo2 xl56j7k">…</div> from <div class="x1n2onr6 xzkaem6">…</div> subtree intercepts pointer events
+  - retrying click action
+    - waiting 500ms
+    - waiting for element to be visible, enabled and stable
+    - element is visible, enabled and stable
+    - scrolling into view if needed
+    - done scrolling
+    - <div class="x1qjc9v5 x9f619 x78zum5 xdt5ytf x1iyjqo2 xl56j7k">…</div> from <div class="x1n2onr6 xzkaem6">…</div> subtree intercepts pointer events
+  - retrying click action
+    - waiting 500ms
+    - waiting for element to be visible, enabled and stable
+

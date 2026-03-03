@@ -1,0 +1,14 @@
+{
+  "daily_limits": {
+    "posts": 2,
+    "reels": 1,
+    "stories": 3
+  },
+  "delays": {
+    "min_seconds_between_actions": 5,
+    "max_seconds_between_actions": 15
+  },
+  "auth": {
+    "use_saved_cookies": true
+  }
+}
